@@ -112,14 +112,13 @@ img {
   width: 100%;
   height: 100%;
   background-color: #fff;
-
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobil-menu {
+.mobil-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -128,10 +127,9 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 340px;
-  height: 100%;
+  width: 320px;
+  height: 640px;
   padding-top: 72px;
-  padding-bottom: 40px;
   background: #fff;
 }
 .mobil-menu-close {
@@ -154,7 +152,6 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .list-link-mob-menu {
   display: flex;
   flex-direction: column;
@@ -221,6 +218,8 @@ img {
 .icons-list.icons-list-footer {
   display: flex;
   gap: 40px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .link-footer {
   display: flex;
@@ -298,7 +297,7 @@ img {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: -26px;
     background-color: #404bbf;
     border-radius: 2px;
     width: 100%;
@@ -319,15 +318,13 @@ img {
     align-items: center;
   }
   .link-nav {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
     text-decoration: none;
     padding: 24px 0;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .link-nav.current::after {
+    bottom: -1px;
   }
   .list-main {
     font-size: 16px;
@@ -530,7 +527,7 @@ img {
     margin-top: 8px;
   }
 }
-/*section3*/
+/*section3 team*/
 
 .section-team {
   background-color: #f4f4fd;
@@ -679,7 +676,7 @@ img {
     margin-bottom: 8px;
   }
 }
-/*section4*/
+/*section4 portfolio*/
 
 .section.portfolio {
   display: flex;
@@ -724,7 +721,9 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
-
+.paragraf-overlay {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .list-portfolio {
     flex-direction: row;
@@ -1097,7 +1096,6 @@ img {
   .form-icon-close:focus {
     fill: #fff;
   }
-
   .cont-input {
     margin-bottom: 8px;
   }
@@ -1197,6 +1195,7 @@ img {
     align-items: center;
     width: 16px;
     height: 16px;
+    margin-right: 8px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     cursor: pointer;
