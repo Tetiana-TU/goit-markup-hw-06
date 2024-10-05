@@ -778,16 +778,13 @@ img {
 
 .section-team {
   background-color: #f4f4fd;
-  padding-bottom: 96px;
+  padding-top: 96px;
   margin-left: auto;
   margin-right: auto;
 }
 .team {
-  display: flex;
   flex-direction: column;
   gap: 72px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .team-color {
   display: flex;
