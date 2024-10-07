@@ -592,7 +592,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-mobil.jpg);
+    url(../images/hero-mobil@1x.jpg);
   max-width: 320px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -651,7 +651,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-tablet.jpg);
+      url(../images/hero-tablet@1x.jpg);
   }
 
   .blok-text {
@@ -681,7 +681,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      url(../images/hero-main-page@1x.jpg);
   }
   .blok-btn {
     margin-top: 48px;
@@ -1162,11 +1162,11 @@ img {
     padding: 96px 108px;
     align-items: start;
     flex-wrap: wrap;
-    }
-    .footer-blok-web-social {
-      display: flex;
-      flex-direction: row;
-    }
+  }
+  .footer-blok-web-social {
+    display: flex;
+    flex-direction: row;
+  }
   .blok-web-footer {
     flex-direction: column;
   }
@@ -1194,7 +1194,7 @@ img {
     gap: 16px;
     border-radius: 4px;
   }
-    .form-input-footer {
+  .form-input-footer {
     width: 264px;
     margin-bottom: 0;
     margin-right: 24px;
@@ -1209,23 +1209,26 @@ img {
   .container-footer {
     max-width: 100%;
     flex-direction: row;
-   flex-wrap: nowrap;
+    flex-wrap: nowrap;
     padding-top: 100px;
     margin: 0 auto;
-      }
-    
-    .container.container-footer {
-      margin: 0 auto;
-      }
-    .footer-blok {
-     width: 1440px;
+  }
+
+  .container.container-footer {
+    margin: 0 auto;
+  }
+  .footer-blok {
     background-color: #2e2f42;
     justify-content: flex-start;
+    margin: 0 auto;
   }
-    .blok-web-footer {
+  .blok-web-footer {
     display: block;
     margin-right: 120px;
     margin-bottom: 0;
+  }
+  .footer-social-footer {
+    margin-right: 80px;
   }
   .footer-blok-text {
     width: 264px;
@@ -1233,7 +1236,6 @@ img {
   }
   .input-btn-footer {
     display: block;
-         
   }
   .icons-list.icons-list-footer {
     gap: 16px;
