@@ -1180,9 +1180,10 @@ img {
   }
   .input-btn-footer {
     display: flex;
+    flex-direction: column;
     margin: 0;
-    justify-content: left;
-  }
+    align-items: flex-start;
+       }
   .blok-web-footer {
     margin-right: 24px;
   }
@@ -1230,7 +1231,7 @@ img {
   .input-btn-footer {
     display: block;
     margin-left: auto;
-  }
+      }
   .icons-list.icons-list-footer {
     gap: 16px;
     margin-right: 24px;
